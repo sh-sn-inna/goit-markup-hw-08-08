@@ -1,0 +1,98 @@
+.footer__container-form {
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: unset;
+  }
+}
+
+.footer-form {
+  &__subscriber {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--secondary-contact-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 15px 16px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--primary-color);
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-bottom: unset;
+      margin-right: 12px;
+    }
+  }
+  &__icon {
+    right: 0;
+    top: 0;
+    margin-left: 10px;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    width: 200px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 29px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--bckg-button-color);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+.footer-form__input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--secondary-contact-color);
+  background-color: var(--background-dark-color);
+}
+
+.footer-form__input:focus {
+  border: var(--accent-color);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

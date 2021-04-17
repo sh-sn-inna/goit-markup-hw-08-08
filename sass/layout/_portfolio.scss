@@ -1,0 +1,17 @@
+.portfolio {
+  padding-top: var(--section-pt-mob);
+  padding-bottom: var(--section-pb-mob);
+  @media screen and (min-width: 768px) {
+    padding-top: var(--section-pt-tablet);
+    padding-bottom: var(--section-pb-tablet);
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: var(--section-pt-desktop);
+    padding-bottom: var(--section-pb-desktop);
+  }
+  & .container {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,64 @@
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation-duration: 1000ms;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
+  &__accent-text {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
+  }
+
+  &__header {
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 215px;
+      margin-right: 93px;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      cursor: pointer;
+    }
+  }
+
+  &_theme {
+    &_light {
+      color: var(--primary-text-color);
+    }
+
+    &_dark {
+      color: var(--primary-color);
+    }
+  }
+
+  &__footer {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+  }
+}
