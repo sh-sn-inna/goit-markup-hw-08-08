@@ -452,6 +452,10 @@ img {
   justify-content: center;
 }
 
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .social-list__link {
   display: flex;
   justify-content: center;
@@ -474,10 +478,6 @@ img {
   width: 20px;
   height: 20px;
   cursor: pointer;
-}
-
-.social-list__icon:not(:last-child) {
-  margin-right: 10px;
 }
 
 .footer__container-icons {
@@ -570,7 +570,7 @@ img {
 @media screen and (min-width: 320px) {
   .modal {
     width: 100%;
-    max-width: 300px;
+    min-width: 300px;
   }
 }
 
@@ -677,7 +677,7 @@ img {
   border-color: var(--accent-color);
 }
 
-.modal-form__input:focus + .modal-form-icon {
+.modal-form__input:focus + .modal-form__icon {
   fill: var(--accent-color);
 }
 

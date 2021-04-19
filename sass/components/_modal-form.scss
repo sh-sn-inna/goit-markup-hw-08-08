@@ -17,7 +17,7 @@
   border-radius: 4px;
   @media screen and (min-width: 320px) {
     width: 100%;
-    max-width: 300px;
+    min-width: 300px;
   }
   @media screen and (min-width: 480px) {
     width: 100%;
@@ -106,7 +106,7 @@
       border-color: var(--accent-color);
     }
 
-    &:focus + .modal-form-icon {
+    &:focus + .modal-form__icon {
       fill: var(--accent-color);
     }
   }
